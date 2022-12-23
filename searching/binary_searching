@@ -1,0 +1,30 @@
+
+#include <iostream>
+using namespace std;
+//declaring function for simple binary seacrh
+
+int binary_searching(int arr[], int size ,int key){
+    int low=0;
+    int mid;
+    int high=6;
+    
+    while(low<=high){
+        mid=(high+low)/2;
+        if(arr[mid]==key){
+            return mid;
+        }
+        else if(arr[mid]>key){
+            high = mid-1;
+        }
+        else{
+            low = mid+1;
+        }
+    }
+    return -1;
+    
+}
+int main() {
+    int array[]={1,2,35,32,55,78};
+    cout<<binary_searching(array,7,32);
+    return 0;
+}
