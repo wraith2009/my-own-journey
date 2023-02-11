@@ -3,7 +3,7 @@ long long int factorial(int N){
     if(N==0||N==1){
         return 1;
     }
-    int recResult=factorial(N-1);
+    long long int recResult=factorial(N-1);
     
     long long int Result=N*recResult;
     
@@ -11,4 +11,4 @@ long long int factorial(int N){
        
 }
 
-NOTE-ERROR AFTER N=12;
+
