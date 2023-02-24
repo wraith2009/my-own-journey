@@ -1,0 +1,21 @@
+//header includes all inbuilt files.
+#include <bits/stdc++.h>
+using namespace std;
+//initialising globally so we can access from anywhere.
+int c=0;
+int print(){
+    if(c==7){
+        return 0;
+    }
+    else{
+        cout<<c<<endl;
+        c++;
+        print();
+    }
+}
+int main() {
+    //we are simply calling the function here to print numbers.
+    print();
+
+    return 0;
+}
