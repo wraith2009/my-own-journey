@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int climbStairs(int n) {
+       // base case
+    // tle needs dp;
+        if(n==1)
+        return 1;
+        if(n==2)
+        return 2;
+
+        long long no_of_ways= climbStairs(n-1) + climbStairs(n-2);
+        return no_of_ways;   
+    
+
+    }
+};
+
+
+note-> showing tle 
